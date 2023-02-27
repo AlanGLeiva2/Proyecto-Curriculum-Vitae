@@ -1,0 +1,73 @@
+:root {
+  --color-nav-body: rgb(173, 161, 161);
+  --color-nav-fuente: #4d4a4a;
+  --color-nav-hover-body: rgb(175, 76, 175);
+  --color-nav-hover-fuente: rgb(34, 32, 32);
+}
+
+.darkmode{
+  --color-nav-body: #111;
+  --color-nav-fuente: #818181;
+  --color-nav-hover-body: darkorchid;
+  --color-nav-hover-fuente: #f1f1f1;
+}
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--color-nav-body);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 99;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--color-nav-fuente);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: var(--color-nav-hover-fuente);
+    background-color: var(--color-nav-hover-body);
+  }
+  
+  .sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #button_burger{
+    position: fixed;
+    top: 14px;
+    right: 14px;
+    font-size:35px;
+    cursor:pointer;
+    border: 5px solid blueviolet;
+    background-color: darkgrey;
+    padding: 0px 10px;
+    z-index: 98;
+  }
+  
+  #button_burger:hover{
+    top: 12px;
+    right: 12px;
+    background-color: rgb(109, 69, 146);
+    border: 5px solid rgb(177, 137, 214);
+    font-size:37px;
+    padding: 2px 12px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

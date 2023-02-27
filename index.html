@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto - Curriculum Vitae">
+    <meta name="author" content="Alan Leiva">
+    <title>Curriculum vitae - Alan</title>
+
+<!--Bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!--Hojas de estilo-->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/progress-bar.css">
+
+<!--GoogleFonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+<!--Fontawesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<!--Javascript-->
+<script src="js/nav.js"></script>
+<script src="js/theme.js"></script>
+
+<!--Favicon-->
+<link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+
+</head>
+
+<body>
+
+  <!--Comprobar localstorage para el tema de la pagina-->
+  <script>
+    if (localStorage.getItem("tema-pagina", "dark")=="dark"){
+      darkmode();
+    }
+  </script>
+
+  <!--Header-->
+  <header>
+    <div id="inicio">
+      <img class="usuario_foto_img" src="imagenes/foto_inicio.png" alt="foto_principal">
+      <h1>Alan Leiva</h1>
+      <h5 style="color: white;">Analista De Sistemas</h5>
+      <h6 style="color: white;">Desarrollador Web - Front End</h6>
+    </div> 
+  </header>
+
+  <!--Inicio-->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="Cerrar"><i class="fa fa-window-close"></i></a><!--&times;-->
+    <a href="#inicio">Inicio</a>
+    <a href="#perfil">Perfil</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#estudios">Estudios</a>
+    <a href="#conocimientos">Conocimiento</a>
+    <a href="#contactos">Contactos</a>
+  </div>
+
+  <!--Nav-->
+  <div id="button_burger">
+    <span onclick="openNav()"><i class="fa fa-bars"></i></span><!--&#9776;-->
+  </div>
+
+  <!--Darkmode-->
+  <div class="container-btn-mode" id="button_tema" onclick="darkmode()">
+    <div class="btn-mode">
+      <i class="fa fa-adjust"></i>
+    </div>
+  </div>
+
+<!--Perfil-->
+  <div class="container-fluid" id="perfil">
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+          <!--<h2>Sobre mi</h2>-->
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-coffee fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Sobre mi</h2>
+          <p>
+            Estudiante de la carrera Analista De Sistemas, cursando el ultimo año de la carrera y finalizando un curso de Front-End.
+            Busco poder plasmar todo lo aprendido y aportar mis conocimientos.
+            Quiero mejorar tanto personalmente como profesionalmente, por eso quiero seguir aprendiendo todo lo que pueda.
+          </p>
+          </div>
+        </div>
+        <div class="col-md-6" id="columna-perfil-datos">
+
+            <div class="row mt-2">
+
+                  <div class="col-4">
+                    <div class="columna_principal">Edad</div>
+                  </div>
+                  <div class="col-8">
+                    <div class="columna_secundaria">23</div>
+                  </div>
+                  <div class="col-4">
+                    <div class="columna_principal">Email</div>
+                  </div>
+                  <div class="col-8">
+                    <div class="columna_secundaria">alangabrielleiva2@gmail.com</div>
+                  </div>
+                  <div class="col-4">
+                    <div class="columna_principal">Telefono</div>
+                  </div>
+                  <div class="col-8">
+                    <div class="columna_secundaria">1132974028</div>
+                  </div>
+
+            </div>
+
+        </div>
+
+        </div>
+      </div>
+
+
+<hr class="d-print-none">
+
+<!--Experiencia Laboral-->
+  <div class="section" id="experiencia">
+    <div class="container">
+      <div class="w3-container w3-card w3-white w3-margin-bottom section-back-color">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiencia Laboral</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity">Tallerez Paz - Obrero</h5>
+          <h6 class="w3-text-teal"><i class="fas fa-calendar fa-fw w3-margin-right"></i>2017 - <span class="w3-tag w3-teal w3-round">2023</span></h6>
+
+          <div class="row">
+
+            <div class="col-md box">
+              <div class="columna_secundaria">
+                <img src="https://www.tallerespaz.com.ar/Temp/App_WebSite/App_PictureFiles/Items/34_400.jpg" title="Regulador de gas envasado" alt="Regulador de gas - Talleres Paz">
+              </div>
+            </div>
+            <div class="col-md p-3">
+              <div class="columna_principal">Armado de reguladores de gas (Atornillador electrico)</div>
+            </div>
+            <div class="col-md box">
+              <div class="columna_secundaria">
+                <img src="https://atramgestion.com/data/cache/opt_jpg/cms/atram/images/posts/199-1662104077-700x700.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md p-3">
+              <div class="columna_principal">Carga y descarga.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<hr class="d-print-none">
+
+<!--Estudios-->
+  <div class="section" id="estudios">
+    <div class="container">
+
+      <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Estudios</h2>
+        
+      <div class="card">
+        <div class="row row-card">
+  
+          <div class="col-md-4 columna-4-card">
+            <div class="card-body">
+              <img src="https://www.grupoioe.es/wp-content/uploads/2019/01/analistasistemascuerpo-1024x683.jpg" class="card-img-top" alt="...">
+              </div>
+          </div>
+          <div class="col-md-8 columna-8-card">
+            <div class="card-body mt-3">
+              <p class="columna-principal-card"><i class="fas fa-university"></i>Actualmente en curso</p>
+              <div class="h4 columna-principal-card">Instituto superior de formacion docente y tecnica N°114 Tupac Amaru II</div>
+              <div class="h5 columna-principal-card">Tecnicatura Superior en Análisis de Sistemas</div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row row-card">
+  
+          <div class="col-md-4 columna-4-card">
+            <div class="card-body">
+              <img src="https://uvp.mx/uvpblog/wp-content/uploads/2021/07/Artes-Visuales.jpg" class="card-img-top" alt="...">
+              </div>
+          </div>
+          <div class="col-md-8 columna-8-card">
+            <div class="card-body mt-3">
+              <p class="columna-principal-card"><i class="fas fa-calendar fa-fw w3-margin-right"></i>2013 - 2017</p>
+              <div class="h4 columna-principal-card">Escuela secundaria N°21 Tupac Amaru II</div>
+              <div class="h5 columna-principal-card">Bachiller en Arte - Artes Visuales</div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Cursos</h2>
+
+        <div class="row row-card">
+  
+          <div class="col-md-4 columna-4-card">
+            <div class="card-body">
+              <img src="https://kinsta.com/es/wp-content/uploads/sites/8/2021/12/front-end-developer-1024x512.png" class="card-img-top" alt="...">
+              </div>
+          </div>
+          <div class="col-md-8 columna-8-card">
+            <div class="card-body mt-3">
+              <p class="columna-principal-card"><i class="fas fa-calendar fa-fw w3-margin-right"></i>2023</p>
+              <div class="h4 columna-principal-card">Argentina Programa 4.0 - Ticmas</div>
+              <div class="h5 columna-principal-card">Desarrollo Front-End</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+<hr class="d-print-none">
+
+<!--Conocimientos-->
+  <div class="container-fluid" id="conocimientos">
+    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-cogs fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Conocimientos</h2>
+
+    <div class="row">
+      <div class="col-sm">
+        <div class="columna_principal">
+          <h3>JAVASCRIPT</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bar-javascript"></div>
+            </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="columna_principal">
+          <h3>SQL SERVER</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bar-sqlserver"> </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm">
+        <div class="columna_principal">
+          <h3>HTML</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bar-html"></div>
+            </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="columna_principal">
+          <h3>WORD</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bar-word"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm">
+        <div class="columna_principal">
+          <h3>CSS</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bar-css"></div>
+            </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="columna_principal">
+            <h3>EXCEL</h3>
+              <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bar-excel"></div>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm">
+        <div class="columna_principal">
+          <h3>C#</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bar-csharp"></div>
+            </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="columna_principal">
+          <h3>INGLES</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bar-ingles"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<hr class="d-print-none">
+
+<!-- Footer -->
+<footer class="text-center" id="contactos">
+  <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-phone-volume fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Contactos</h2>
+  <!-- Grid container-fluid -->
+  <div class="container-fluid p-5">
+
+    <ul class="nav justify-content-center">
+      <li class="nav-item"><a class="nav-link" href="#" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="https://github.com/AlanGLeiva2" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/alan-leiva-7a5b3524a/" title="LinkedIn"><i class="fab fa-linkedin-in"></i><span class="menu-title sr-only">LinkedIn</span></a>
+      </li>
+    </ul>
+    
+  </div>
+  <!-- Copyright -->
+</footer>
+
+</body>
+</html> 
